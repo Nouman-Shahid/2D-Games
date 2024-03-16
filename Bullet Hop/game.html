@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/game.css" rel="stylesheet">
+
+    <title>Bullet Hop</title>
+    
+</head>
+<script src="javascript/game.js">
+
+</script>
+<body>
+    <div id="game-container">
+        <div class="flex">
+            <div id="healthcontainer">Health : 100</div>
+            <div id="changescore">Time : 0</div>
+        </div>
+
+        <div id="progressbar">
+         <progress id="enemyhealth" max="100" value="100"></progress>
+        </div>
+
+        <div>
+            <img src="images/bushes.png" class="bushes1 bushes">
+            <img src="images/bushes.png" class="bushes2 bushes">
+
+        </div>
+
+       <center><div id="game_over">Game Over
+        <input type="submit" value="Play Again" id="btn" onclick="reload()">
+        <a href="home.html" id="btn"> Exit</a>
+       </div></center>
+
+       <center>
+        <div id="you_win">
+        You Win
+        <div id="you_win_score"></div> <!-- Display the winning score here -->
+        <input type="submit" value="Play Again" id="btn" onclick="reload()">
+        <a href="home.html" id="btn"> Exit</a>
+    </div>
+</center>
+       
+
+            <img src="images/player_standing.gif"  id="player" >
+            <img src="images/bullet.png" class="bullet2" id="player_bullet">
+
+
+        <div id="enemy">
+            <img src="images/enemy.gif" class="enemy enemy1">
+            <img src="images/enemy.gif" class="enemy enemy1">
+            <img src="images/enemy.gif" class="enemy enemy2">
+            <img src="images/enemy.gif" class="enemy enemy2">
+        </div>
+
+        <div id="bullet">
+            <img src="images/bullet.png" class="bullet bullet_animation" id="enemy_bullet">
+            
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

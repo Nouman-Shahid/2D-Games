@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullet Hop</title>
+    <link href="css/home.css" rel="stylesheet">
+  
+    <script src="javascript/home.js"></script>
+</head>
+<body>
+  <script src="javascript/game.js"></script>
+  <div>
+    <img src="images/helicopter.gif" id="helicopter">
+  </div>
+  <div>
+    <img src="images/player3_walking.gif" id="player3">
+  </div>
+    <div class="container">
+      
+        <div class="items">
+        <h1>Bullet Hop</h1>
+      <center>
+        <h5>developed by Numan</h5>
+        <h2 id="store" onclick="toggleshop()">Select Player</h2>
+        <h2 id="settings" onclick="togglesetting()">Controls</h2>
+        <h2 id="mod" onclick="togglemode()">Mode</h2>
+        <h2 id="about">About</h2>
+      </center>  
+        <a href="game.html"> Start</a>
+        </div>
+
+        <div id="inventory">
+
+          <div id="playerselector">
+            <div><img src="images/player3_standing.gif" id="select1" style="height: 130px;" onclick="toggleimg('select1')"></div>
+            <div><img src="images/player2.gif" id="select2" onclick="toggleimg('select2')"></div>
+            <div><img src="images/player_standing.gif" id="select3" style="height: 120px;" onclick="toggleimg('select3')"></div>
+          </div>
+
+          <div class="playerimage" id="img1" >
+            <img src="images/cross-icon.png" id="cross" onclick="end()">  
+            <label>Gunblade Guardian </label>
+            <img src="images/player3_walking.gif" id="select1">
+
+            <div id="bars">
+              <h4>Sprint:   
+              <progress max="100" value="100"></progress>
+              </h4>
+              <h4>Jump:   
+                <progress max="100" value="80"></progress>
+                </h4>
+                <h4>Skills:   
+                  <progress max="100" value="70"></progress>
+                  </h4>
+
+                  <button id="selectbtn1" type="button"  onclick="updatetext('selectbtn1')">select</button>
+              </div>
+          </div>
+
+          <div class="playerimage" id="img2">
+            <img src="images/cross-icon.png" id="cross" onclick="end()">  
+            <label>Old Gunslinger</label>
+            <img src="images/player2_walk.gif" id="select1">
+
+            <div id="bars">
+              <h4>Sprint:   
+              <progress max="100" value="60"></progress>
+              </h4>
+              <h4>Jump:   
+                <progress max="100" value="60"></progress>
+                </h4>
+                <h4>Skills:   
+                  <progress max="100" value="90"></progress>
+                  </h4>
+                  <button id="selectbtn2" type="button"  onclick="updatetext('selectbtn2')">select</button>
+              </div>
+          </div>
+
+          <div class="playerimage" id="img3">
+            <img src="images/cross-icon.png" id="cross" onclick="end()">  
+            <label>Pistol Max</label>
+            <img src="images/player_pistol.gif" id="select1">
+
+            <div id="bars">
+              <h4>Sprint:   
+              <progress max="100" value="80"></progress>
+              </h4>
+              <h4>Jump:   
+                <progress max="100" value="100"></progress>
+                </h4>
+                <h4>Skills:   
+                  <progress max="100" value="90"></progress> 
+                  </h4>
+                  <button id="selectbtn3" type="button" onclick="updatetext('selectbtn3')">select</button>
+              </div>
+          </div>
+          
+        </div>
+
+        <div id="setting">
+
+          <div class="settingcontainer">
+              <div><img src="images/arrowleft.jpeg" id="arrow" ></div>
+              <div><img src="images/arrowup.jpeg" id="arrow" ></div>
+              <div><img src="images/arrowright.jpeg" id="arrow"></div>
+              <div><img src="images/downkey.jpeg" id="arrow"></div>
+              <div><img src="images/wkey.jpeg" id="arrow"></div>
+          </div>
+          
+          <div class="settingcontainer">
+            <h3>Walk Left</h3>
+            <h3>Jump</h3>
+            <h3>Walk Right</h3>
+            <h3>Stand Still</h3>
+            <h3>Shoot</h3>
+
+        </div>
+
+        <img src="images/cross-icon.png"   id="cross2" onclick="end()">  
+
+        </div>
+
+        <div id="mode">
+          <div class="modecontainer">
+            <h3>Easy Mode</h3>
+            <h3>Normal Mode</h3>
+            <h3>Hard Mode</h3>
+            <h3>Extreme Mode</h3>
+          </div>
+          <div class="modecontainer2">
+            <button id="btn1" onclick="updatebtn('btn1')">select</button>
+            <button id="btn2" onclick="updatebtn('btn2')">select</button>
+            <button id="btn3" onclick="updatebtn('btn3')">select</button>
+            <button id="btn4" onclick="updatebtn('btn4')">select</button>
+          </div>
+          <img src="images/cross-icon.png"   id="cross2" onclick="end()">  
+
+        </div>
+
+</div>
+</body>
+</html>
+

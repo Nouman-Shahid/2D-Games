@@ -1,0 +1,66 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210924/pngtree-space-cartoon-lava-background-image_905024.png");
+}
+
+.menu{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 3vh;
+    padding: 2vh 3vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    background-color: rgba(7, 1, 41, 0.9);
+    border: 2px solid rgb(216, 214, 86);
+    height: 40vh;
+}
+
+.menu h1{
+
+    color: red;
+    font-size: 6vh;
+}
+.menu h2{
+
+    color: rgb(144, 142, 151);
+    font-size: 3.5vh;
+}
+
+
+.menu ul{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: -3vw;
+
+
+}
+
+.menu ul li{
+
+    list-style: none;
+    font-size: 4vh;
+    cursor: pointer;
+
+}
+
+.menu ul li a{
+
+    text-decoration: none;
+    color: rgb(188, 190, 18);
+
+}
+.menu ul li a:hover{
+    transition:0.5s ease-in-out;
+    color: wheat;
+}
+

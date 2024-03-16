@@ -1,0 +1,86 @@
+/* About.module.css */
+
+.about {
+    max-width: 80%;
+    margin: 1vh auto;
+    padding: 1vh 3vw;
+    border-radius: 5vh;
+    background-color: rgba(3, 22, 1, 0.9);
+    border: 2px solid rgb(216, 214, 86); 
+    color: white; 
+    animation: animate 3s ;
+}
+
+@keyframes animate {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+    
+}
+  
+  .title {
+    font-size: 6vh;
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+  }
+  
+  .description {
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+  
+  .gameplay, .features, .objective, .controls, .credits, .disclaimer, .ready {
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: yellowgreen;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  ul li {
+
+    color: rgb(230, 222, 225);
+    font-size: 2.5vh;
+  }
+  
+  strong {
+    font-weight: bold;
+    color: rgb(133, 133, 206);
+  }
+  
+  p {
+    margin: 0;
+    font-size: 3vh;
+
+  }
+  
+
+.arrow{
+
+  position: absolute;
+  top: 40vh;
+  height: 8vh;
+  left: 2vw;
+  background-color:rgb(255, 255, 255);
+  border: 2px solid yellow;
+  border-radius: 50%;
+
+
+}
+
+.arrow:hover{
+    scale: 0.92;
+}

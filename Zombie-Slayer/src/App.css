@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+
+    /* background-image: url('https://img.freepik.com/free-vector/game-platform-cartoon-forest-landscape-2d-design_107791-3246.jpg?w=996&t=st=1695212877~exp=1695213477~hmac=c8a14b2e759e99ed09a156fd4b4d0ee4646e2f4e48afdf2f1990b91863803965'); */
+    background-image: url('https://img.freepik.com/free-vector/game-platform-cartoon-forest-landscape-2d-ui-design-computer-mobile-bright-wood-with-green-trees-grass-lianas-background-with-arcade-elements-jumping-bonus-items-nature-locations_107791-4657.jpg?w=996&t=st=1695802280~exp=1695802880~hmac=45c3e1e94552e9eeaf014e9fc500ec9f67e3788083eeffed5395fb4001b3ed4a');
+
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    font-family: 'Ribeye', cursive;
+}
+
+
+
+
+
+
+.animateplayer{
+
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+
+    100%{
+        bottom: 35vh;
+    }
+    
+}
+
+
+.blood{
+
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    animation: bloodeffect 1.5s ;
+    display: none;
+    z-index: 100;
+}
+
+@keyframes bloodeffect {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.7;
+    }
+}

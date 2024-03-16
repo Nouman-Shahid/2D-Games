@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.background , html {
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://cdn.dribbble.com/userupload/5199229/file/original-f28476dd1e5e49bfac22616e5477eb48.jpg?resize=1024x683&vertical=center');
+  /* background-image: url('https://cdn.dribbble.com/userupload/7112749/file/original-21ae9ca069679f3e1f6aff7eba98b042.jpg?resize=1024x683&vertical=center'); */
+  /* background-image: url('https://cdn.dribbble.com/userupload/5199231/file/original-93014deaa867bd2950f92ec84980060c.jpg?resize=1024x683&vertical=center'); */
+  /* background-image: url('https://cdn.dribbble.com/userupload/5199228/file/original-3d9a91a7aff3a7d9c10d52a86c082fbc.jpg?resize=1024x683&vertical=center'); */
+  /* background-image: url('https://cdn.dribbble.com/userupload/5199227/file/original-878afd6ef09e86ca2eb914b9efc501ac.jpg?resize=1024x683&vertical=center'); */
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  }
+
+.healthbar {
+  position: fixed;
+  width: 30%;
+  border-bottom-right-radius: 100px;
+  padding: 8px 5px;
+  display: flex;
+  height: auto;
+  border: 2px solid rgb(202, 200, 200);
+  background-color: rgba(0, 0, 0, 0.8);  
+  align-items: center;  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(39, 39, 43);
+  transition: .5s;
+  animation: animatebar 3s 1;
+}
+
+
+@keyframes animatebar {
+
+  0%{
+    left: -25vw;
+    opacity: 0;
+
+
+  }
+
+  100%{
+    left: 0vw;
+    opacity: 1;
+  }
+}
+
+.healthbar img {
+  height: 70px;
+  /* border: 4px solid rgb(221, 221, 18); */
+  /* background-color: rgb(58, 58, 59);
+  border-radius: 50%; */
+}
+
+.healthbar progress {
+  height: 35px;
+  width: 70%;
+  border: 2px solid rgb(105, 105, 105);
+  border-top-right-radius: 10px;
+  margin-right: 30px;
+  border-bottom-right-radius: 100px;
+}
+
+.healthbar progress::-webkit-progress-bar {
+  background-color: rgb(187, 185, 185);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 100px;
+}
+
+.healthbar progress::-webkit-progress-value {
+  background-image: linear-gradient(to right , rgb(224, 18, 18), rgb(252, 187, 9));
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 100px;
+
+}
+
+.player {
+
+  height: 29vh;
+  width: 15vw;
+  bottom:21vh;
+  left: 3vw;
+  overflow: hidden;
+  position: absolute;
+  animation: player 2.5s  1 ease-in;
+
+}
+
+.enemy img{
+  height: 50vh;
+
+}
+.enemy{
+  animation: player 2.5s  1 ease-in;
+
+}
+
+@keyframes player {
+
+  0%{
+    opacity: 0;
+
+
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+.enemy img{
+  height: 50vh;
+
+}
+
+.enemy1{
+  bottom: 10vh;
+  position: absolute;
+  /* border: 2px solid yellow; */
+  right: 0vw;
+}
+
+
+
+.enemy progress{
+  position: absolute;
+  bottom: 45vh;
+  right: 5vw;
+  height: 18px;
+  display: block;
+  width: 200px;
+  background-color: red;
+  border: 2px solid rgb(105, 105, 105);
+  border-radius: 20px;
+}
+.enemy progress::-webkit-progress-bar {
+  background-color: rgb(187, 185, 185);
+  border-radius: 20px;
+
+}
+.enemy progress::-webkit-progress-value {
+  border-radius: 20px;
+
+  background-color: red;
+}
+
+.healpotion{
+
+  position: absolute;
+  right: 20vw;
+  top: 28vh;
+  height: 18%;
+  animation: player 2.5s  1 ease-in;
+
+}
+
+
+.coin1{
+  height: 30px;
+  position: absolute;
+  left: 40vw;
+  bottom: 14vh;
+  animation: player 2.5s  1 ease-in;
+
+}
+.coin2{
+  height: 30px;
+  position: absolute;
+  left: 50vw;
+  top: 35vh;
+  animation: player 2.5s  1 ease-in;
+
+}
+.coin3{
+  height: 30px;
+  position: absolute;
+  right: 10vw;
+  bottom: 55vh;
+  animation: player 2.5s  1 ease-in;
+
+}
+
+.total{
+  color: rgb(191, 230, 20);
+  font-family: 'Press Start 2P', cursive;
+  margin-left: 40px;
+}
+
+.coinbar {
+  position: fixed;
+  width: 30%;
+  right: 0vw;
+  border-bottom-left-radius: 100px;
+  padding: 8px 5px;
+  display: flex;
+  height: 10vh;
+  border: 2px solid rgb(202, 200, 200);
+  background-color: rgba(0, 0, 0, 0.8);  align-items: center;
+  justify-content: center;
+  background-color: rgb(39, 39, 43);
+  transition: .1s;
+  animation: animatecoin 3s 1;
+}
+
+
+@keyframes animatecoin {
+
+  0%{
+    right: -25vw;
+    opacity: 0;
+
+  }
+
+  100%{
+    right: 0vw;
+    opacity: 1;
+  }
+}
+.coinbar img{
+
+  height: 8vh;
+}

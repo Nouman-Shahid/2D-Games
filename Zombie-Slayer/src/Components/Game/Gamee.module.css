@@ -1,0 +1,353 @@
+
+.player1 {
+    position: absolute;
+    bottom: 20vh;
+    height: 18vh;
+    left: 20vw;
+
+}
+
+.portal{
+
+    position: absolute;
+    right: -12.5vw;
+    top: 3vh;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.enemy1 {
+    position: absolute;
+    display: block;
+    bottom: 17.5vh;
+    right: 19vw;
+    height: 28vh;
+    animation: spawnenemy 6s , walk  30s 6.2s;
+}
+.enemy2 {
+    position: absolute;
+    right: 20vw;
+    bottom: 16.5vh;
+    height: 30vh;
+    display: none;
+    animation: spawnenemy 6s, walk  40s 6.2s;
+}
+@keyframes spawnenemy {
+    0%{
+        bottom: 49vh;
+        right: -10vw;
+        opacity: 0.5;
+        scale: 0.5;
+    }
+    100%{
+        bottom: 49vh;
+        right: 14vw;
+        opacity: 1;
+        scale: 1;
+
+    }
+}
+@keyframes walk {
+    0%{
+        right: 20vw;
+
+    }
+    100%{
+       right: 60%;
+
+    }
+}
+.bullet1{
+
+    height: 2.5vh;
+    width: 2vw;
+    position: absolute;
+    bottom: 26.5vh;
+    left: 29vw;
+    color: yellow;
+    border: 2px solid green;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    background-color: yellow;
+    animation: bullet1 600ms  infinite;
+    display: none;
+}
+
+@keyframes bullet1 {
+    
+    100%{
+        left: 70%;
+
+    }
+}
+
+.hole{
+
+  background-color: rgb(163, 161, 161);
+  color: rgb(163, 161, 161);
+  border-bottom-left-radius: 1vh;
+  border-top-left-radius: 1vh;
+  width: 3vw;
+  position: absolute;
+  border: 2px solid rgb(85, 85, 85);
+  right: 19vw;
+  bottom: 40vh;
+}
+
+.enemybullet{
+
+  height: 2.5vh;
+  width: 3vw;
+  position: absolute;
+  bottom: 40.5vh;
+  right: 19.8vw;
+  color: rgb(255, 0, 0);
+  border: 2px solid green;
+  border-top-left-radius: 5vh;
+  border-bottom-left-radius: 5vh;
+  background-color: rgb(255, 0, 0);
+  animation: enemyfire 3s 1 10s;
+}
+
+@keyframes enemyfire {
+  
+  100%{
+      right: 70%;
+      bottom: 30vh;
+
+  }
+}
+
+
+.stone1{
+
+    position: absolute;
+    bottom: 22vh;
+    left: 1vw;
+    width: 17.5vw;
+    /* border: 2PX SOLID yellow; */
+    height: 20vh;
+    border-bottom-left-radius: 30vw;
+    border-bottom-right-radius: 30vw;
+}
+.stone2{
+
+    position: absolute;
+    bottom: 32vh;
+    right: 3vw;
+    /* border: 2PX SOLID yellow; */
+    width: 18.5vw;
+    height: 20vh;
+    border-bottom-left-radius: 30vw;
+    border-bottom-right-radius: 30vw;
+}
+
+.enemybar{
+    position: absolute;
+    bottom: 45vh;
+    right: 20vw;
+    height: 2vh;
+    width: 12vw;
+    border: 2px solid rgb(105, 105, 105);
+    animation: enemyhealth 6s , walk  30s 6.2s;
+    border-radius: 20px;
+  }
+  .enemybar::-webkit-progress-bar {
+    background-color: rgb(187, 185, 185);
+    border-radius: 20px;
+  
+  }
+  .enemybar::-webkit-progress-value {
+    border-radius: 20px;
+  
+    background-color: rgb(208, 255, 0);
+  }
+
+
+  @keyframes enemyhealth {
+    0%{
+        bottom: 75vh;
+        right: -10vw;
+        opacity: 0.5;
+    }
+    100%{
+        bottom: 75vh;
+        right: 14vw;
+        opacity: 1;
+    }
+}
+
+.ammo{
+
+    height: 5vh;
+    position: absolute;
+    top: -10vh;
+    left: 38vw;
+    border: 2px solid rgb(221, 245, 4);
+    border-radius: 5vh;
+    background-color: rgb(88, 81, 81);
+    padding: 1vh;
+    animation: bulletspawn 10s 20s infinite;
+}
+
+@keyframes bulletspawn {
+
+    0%{
+        top: -10vh;
+    }
+    100%{
+        top: 100vh;
+    }
+    
+}
+
+
+.bar{
+    display: flex;
+    width: 25vw;
+    height: 13vh;
+    padding: 2vh 1vw;
+    background-color: rgba(3, 22, 1, 0.8);
+    border: 2px solid rgb(216, 214, 86);
+    border-radius: 2vh;
+    margin-left: -1vw;
+    margin-top: -1vh;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.healthbar{
+    width: 105%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.healthbar  img {
+
+    height: 7.5vh;
+    border: 2px solid yellow;
+    border-radius: 50%;
+}
+
+
+.ammobar{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    padding: 0vh 1vw;
+}
+.ammobar p {
+    font-size: 3.3vh;
+    padding: 0vh 0.5vw;
+    margin-left: 1vw;
+    color: rgb(247, 247, 72);
+    border: 2px solid rgb(187, 187, 105);
+    border-radius: 50%;
+}
+.ammobar h2 {
+  color: rgb(212, 191, 191);
+  font-size: 3.2vh;
+  
+}
+.ammobar  img {
+
+    height: 4vh;
+    border: 2px solid white;
+    background-color: rgb(15, 14, 14);
+    border-radius: 5vh;
+    padding: 1vh;
+    margin-left: -1.5vh;
+}
+
+.playerhealth{
+    height: 3vh;
+    width: 70%;
+    border: 2px solid rgb(150, 150, 54);
+    border-bottom-right-radius: 20px;
+  }
+  .playerhealth::-webkit-progress-bar {
+    background-color: rgb(187, 185, 185);
+    border-bottom-right-radius: 20px;
+
+  
+  }
+  .playerhealth::-webkit-progress-value {
+    border-bottom-right-radius: 20px;
+    background-color: rgb(125, 192, 0);
+  }
+
+  .enemyflag{
+
+    position: absolute;
+    top: 24.5vh;
+    left: 48vw;
+    height:15vh;
+    opacity: 0.8;
+
+  }
+  .board{
+
+    position: absolute;
+    bottom: 18vh;
+    right: 33vw;
+    height: 20vh;
+    width: 8%;
+    z-index: -1;
+    opacity: 0.9;
+
+  }
+  .bushes{
+    position: absolute;
+    height: 27vh;
+    bottom: 32vh;
+    left: 2vw;
+    width: 19vw;
+    opacity: 0.8;
+  }
+
+
+  .enemybar2{
+    position: absolute;
+    bottom: 45vh;
+    display: none;
+    right: 20vw;
+    height: 2vh;
+    width: 12vw;
+    border: 2px solid rgb(105, 105, 105);
+    animation: enemyhealth 6s , walk  40s 6.2s;
+    border-radius: 20px;
+  }
+  .enemybar2::-webkit-progress-bar {
+    background-color: rgb(187, 185, 185);
+    border-radius: 20px;
+  
+  }
+  .enemybar2::-webkit-progress-value {
+    border-radius: 20px;
+  
+    background-color: rgb(208, 255, 0);
+  }
+
+
+
+
+  .pausemenu {
+    position: absolute;
+    top: 1vh;
+    right: 47vw;
+    background-color: rgba(3, 22, 1, 0.8);
+    border: 2px solid rgb(216, 214, 86);
+    padding: 3vh 1.2vw;
+    border-radius: 2vh;
+    cursor: pointer;
+  }
+  .pausemenu img{
+    height: 6vh;
+  }
+  .pausemenu:hover{
+    scale: 0.9;
+  }

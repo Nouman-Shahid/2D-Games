@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+.home{
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3vh;
+   
+}
+
+.menu{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+    align-items: center;
+    margin-top: 0vh;
+    border-radius: 10px;
+    border: 4px solid rgb(202, 200, 200);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 40vw;
+    animation: menubar 3s 1 ease-out ;
+    height: auto;
+}
+.menu img{
+    height: 30vh;
+    animation: menuh1 5s .8s 1  ease-in-out;
+
+}
+@keyframes menubar {
+
+    0%{
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0vh);
+
+    }
+    
+}
+
+
+.menu h1{
+
+    color: yellow;
+    font-family: 'Press Start 2P', cursive;
+    margin: 2vh;
+    animation: menuh1 5s .8s 1  ease-in-out;
+
+}
+
+@keyframes menuh1 {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+
+    }
+    
+}
+
+.menu h3{
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(141, 141, 194);
+    margin: 2vh;
+    animation: btn 3.8s  1  ease;
+
+
+}
+@keyframes btn {
+
+    0%{
+        transform: translateX(-10vw);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0vw);
+
+
+    }
+    
+}
+.menu button{
+
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 5px 25px;
+    cursor: pointer;
+    margin: 2vh;
+    animation: btn 4s  1 both;
+
+}
+@keyframes btn {
+
+    0%{
+        transform: translateY(200vh);
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0vh);
+
+
+    }
+    
+}
+button:hover{
+
+  color: white;
+  background-color: black;
+}
+
+.inventory{
+    display: none;
+    align-items: center;
+    border: 4px solid rgb(202, 200, 200);
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    border-radius: 15px;
+    width: auto;
+    animation: inventory 1.3s  1 ease-out ;
+    height: 83vh;
+    }
+    @keyframes inventory {
+
+        0%{
+            opacity: 0;
+            transform: translateY(-120vh);
+        }
+    
+        100%{
+            opacity: 1;
+            transform: translateY(0vw);
+    
+        }
+    }
+.players {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(70, 69, 69, 0.8);
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+
+}
+
+
+
+.knight{
+
+    height: 15vh;
+    width: 10vw;
+    margin-left: 2vw;
+    margin-top: 5vh;
+}
+.knight:hover{
+
+    scale: 1.2;
+}
+
+.playerimg{
+    height: 20vh;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.playerimg:hover{
+
+    scale: 1.2;
+}
+
+.details{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.details img{
+
+    height: 40vh;
+    width: 30vw;
+
+}
+
+.details h1{
+    font-family: 'Press Start 2P', cursive;
+    color: yellow;
+    margin: 2vh;
+}
+.details label{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    margin: 2vh;
+
+}
+
+.details button{
+    
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 5px 25px;
+    cursor: pointer;
+    margin: 2vh;
+}
+
+.inventory .cross{
+
+    height: 7vh;
+    position: relative;
+    right:1vw;
+    cursor: pointer;
+    top: -36vh;
+}
+
+.cross:hover{
+
+    scale: 0.8;
+}
+
+.player2{
+    height: 39vh;
+}
+
+
+.controls{
+
+    display: none;
+    align-items: center;
+    border: 4px solid rgb(202, 200, 200);
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 30px;
+    border-radius: 15px;
+    width: auto;
+    animation: controls 1.3s  1 ease-out ;
+    height: auto;
+}
+
+@keyframes controls {
+
+    0%{
+        opacity: 0;
+        transform: translateY(120vh);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0vw);
+
+    }
+}
+
+.left{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.left h2{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.right h2{
+    color: rgb(238, 255, 1);
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+}
+
+.controls .cross{
+    height: 7vh;
+    position: relative;
+    right:0vw;
+    cursor: pointer;
+    top: -26vh;
+}

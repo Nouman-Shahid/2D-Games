@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+canvas {
+    border: 2px solid red;
+    height: 100vhvh;
+    width: 100vw;
+}

@@ -1,0 +1,106 @@
+/* Level.module.css */
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .imageInfo {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2vh 3vw;
+    border-radius: 2vh;
+    width: 25%;
+  }
+
+  .imageInfo h1{
+
+    color: yellowgreen;
+  }
+  .imageInfo a{
+
+    text-decoration: none;
+    font-size: 4vh;
+    color: wheat;
+  }
+  .imageInfo a:hover{
+
+    color: rgb(39, 28, 28);
+  }
+  
+  .carouselWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .carouselItem {
+    flex: 0 50% 50%;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carouselItem img {
+    max-width:80%;
+    max-height: 100%;
+    margin: 7vh;
+    border: 2px solid yellowgreen;
+    border-radius: 2vh;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.9);
+  }
+  
+  .active {
+    transform: scale(1.2); /* Increase the size of the active image */
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .prevButton,
+  .nextButton {
+    height: 10vh;
+    background-color: rgb(165, 223, 51);
+    border-radius: 2vh;
+    margin: 2vh;
+    opacity: 0.85;
+    cursor: pointer;
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    
+    scale: 0.88;
+    background-color: rgb(165, 223, 51);
+
+  }
+  
+
+  .arrow{
+
+    position: absolute;
+    top: 10vh;
+    height: 8vh;
+    left: 2vw;
+    background-color:rgb(255, 255, 255);
+    border: 2px solid rgb(197, 197, 26);
+    border-radius: 50%;
+  
+  
+  }
+  
+  .arrow:hover{
+      scale: 0.92;
+  }

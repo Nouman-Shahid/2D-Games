@@ -1,0 +1,139 @@
+
+.fire{
+    height: 30vh;
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    width: 10vw;
+    display: none;
+}
+
+.dynamite{
+
+    height: 3.5vh;
+    position: absolute;
+    display: none;
+    bottom: 28vh;
+    left: 25vw;
+    animation: bomb 1.5s ;
+}
+
+@keyframes bomb {
+    0%{
+        bottom: 28vh;
+        opacity: 0.5;
+    }
+    100%{
+        bottom: 20vh;
+        left: 48vw;
+        opacity: 1;
+    }
+}
+
+.explosion{
+
+    height: 30vh;
+    left: 41vw;
+    display: none;
+    bottom: 16vh;
+    position: absolute;
+
+}
+
+
+.tools{
+
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vh 2vw;
+    width: 22%;  
+
+}
+
+.tools img{
+
+    border-radius: 15%;
+    background: linear-gradient(rgba(3, 22, 1, 0.8), rgba(3, 22, 1, 0.8) 45%, rgba(146, 192, 38, 0.788) 50%, rgba(238, 11, 11, 0.336));
+    background-size: 100% 200%;
+    transition: background 1.2s;
+    border: 2px solid rgb(216, 214, 86);
+}
+
+.tools img:hover{
+    cursor: pointer;
+    background-position: 100% 100%;
+}
+
+
+
+.tools .firetool{
+    height: 10vh;
+    padding: 1vh 1vw;
+}
+.tools .dynamitetool{   
+    height: 4vh;
+    padding: 4vh 0.2vw;
+}
+.tools .healthpotion{   
+    height: 8vh;
+    padding: 2vh 0.7vw;
+}
+
+
+.gameover{
+
+    position: absolute;
+    bottom: 35vh;
+    left: 38vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 2vh;
+    background-color: rgb(3, 22, 1);
+    border: 2px solid rgb(216, 214, 86);
+    padding: 3vh 3vw;
+    display: none;
+    animation: game 5s;
+}
+
+@keyframes game {
+
+    0%{
+        bottom: -20vh;
+    }
+    100%{
+        bottom: 35vh;
+    }
+    
+}
+
+.gameover a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gameover a:hover{
+    scale: 0.92;
+}
+
+.gameover h1 , h3{
+
+    color : rgb(214, 214, 214)
+
+}
+.gameover h2 {
+
+    color: rgb(158, 216, 22);
+}
+
+
+.gameover h4{
+
+    color: red;
+    font-size: 3vh;
+}

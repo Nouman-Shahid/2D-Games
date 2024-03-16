@@ -1,0 +1,86 @@
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.menu{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 3vh;
+    padding: 2vh 3vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    background-color: rgba(3, 22, 1, 0.9);
+    border: 2px solid rgb(216, 214, 86);
+    height: 40vh;
+}
+
+.menu h1{
+
+    color: red;
+    font-size: 6vh;
+}
+.menu h2{
+
+    color: rgb(144, 142, 151);
+    font-size: 3.5vh;
+}
+
+
+.menu ul{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: -1vw;
+
+
+}
+
+.menu ul li{
+
+    list-style: none;
+    font-size: 4vh;
+    cursor: pointer;
+
+}
+
+.menu ul li a{
+
+    text-decoration: none;
+    color: rgb(188, 190, 18);
+
+}
+.menu ul li a:hover{
+    transition:0.5s ease-in-out;
+    color: wheat;
+}
+
+.player{
+    position: absolute;
+    right: 0vw;
+    height: 45vh;
+    bottom: 48vh;
+}
+
+.enemy{
+    position: absolute;
+    height: 30vh;
+    left: -1vw;
+}
+
+.music{
+
+    color: yellow;
+    right: 38vw;
+    bottom: 31vh;
+    position: absolute;
+    cursor: pointer;
+    height: 5vh;
+}
